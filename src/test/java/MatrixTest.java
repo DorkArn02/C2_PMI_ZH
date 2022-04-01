@@ -26,15 +26,16 @@ public class MatrixTest {
     @Test
     public void testIndexOfColumnsWithSameValues() {
         int[][] matrix = {
-                { 84,  79,  22, -72,  95},
-                { 72,  79,   2, -88,  30},
-                { 95,  79, -87, -27, -97},
-                {-52,  79, -13, -19, -27},
-                { 79,  79,  95, -84, -53}
+                { 84,  79,  22, -33,  95},
+                { 72,  79,  22, -33,  30},
+                { 95,  79,  22, -33, -97},
+                {-52,  79,  22, -33, -27},
+                { 79,  79,  22, -3, -53}
         };
 
         ArrayList<Integer> expected = new ArrayList<>();
         expected.add(1);
+        expected.add(2);
 
         ArrayList<Integer> actual = Matrix.indexOfColumnsWithSameValues(matrix);
 
