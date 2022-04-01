@@ -5,7 +5,7 @@ import java.util.ArrayList;
  */
 public class Matrix {
     /**
-     * Counts the non-zero values in the matrix
+     * Sums the non-zero values in the matrix
      * @param matrix 2D integer array
      * @return sum of non-zero values
      */
@@ -20,7 +20,7 @@ public class Matrix {
         return sum;
     }
     /**
-     *
+     * Returns an arraylist of indexes of columns with same values
      * @param matrix 2D integer array
      * @return ArrayList of columns with same values
      */
