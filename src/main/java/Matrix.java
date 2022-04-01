@@ -1,12 +1,9 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-
 /**
  *
  * @author Dorkó Arnold
  */
 public class Matrix {
-
     /**
      * Counts the non-zero values in the matrix
      * @param matrix 2D integer array
@@ -22,7 +19,6 @@ public class Matrix {
         }
         return sum;
     }
-
     /**
      *
      * @param matrix 2D integer array
@@ -30,9 +26,7 @@ public class Matrix {
      */
     public static ArrayList<Integer> indexOfColumnsWithSameValues(int[][] matrix) {
         ArrayList<Integer> a = new ArrayList<>();
-
         ArrayList<Integer> helper = new ArrayList<>();
-
         for(int cols = 0; cols < matrix[0].length; cols++){
             for (int[] ints : matrix) {
                 helper.add(ints[cols]);
@@ -42,17 +36,12 @@ public class Matrix {
         }
         return a;
     }
-
     private static boolean isSame(ArrayList<Integer> arr){
-
         int condition = arr.get(0);
-
         for (int i : arr) {
             if(i != condition)
                 return false;
         }
-
         return true;
     }
-
 }

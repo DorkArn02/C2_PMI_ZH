@@ -1,10 +1,8 @@
 import java.util.Map;
-
 /**
  * @author Dorkó Arnold
  */
 public class PositionChanges extends Team{
-
     /**
      * Changes the specified person's position
      * @param member1 Person's name
